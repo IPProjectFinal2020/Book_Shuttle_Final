@@ -65,27 +65,7 @@ require_once "pdo.php";
 			</div>
 		</div>
 	</nav>
-<!--
-        <header class="page-header">
-            <nav>
-                <h2 class="logo">Book Shuttle</h2>
-                <ul>
-                    <li>
-                        <a href="" style="color:black; text-decoration: none;"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a>
-                    </li>
-                    <li>
-                        <a href="#footer" style="color:black; text-decoration: none;"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;Contact</a>
-                    </li>
-                    <li>
-                        <a href="#aboutus" style="color:black; text-decoration: none;"><i class="fa fa-info" aria-hidden="true"></i>&nbsp;About</a>
-                    </li>
-                  
-                </ul>
 
-                 <button class="cta-contact">Get in touch</button> 
-            </nav>
-        </header>
--->
         <main class="page-main" id="home">
             <div>
                 <div class="text-wrapper">
