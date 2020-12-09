@@ -1,0 +1,73 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css">
+        <script src="https://use.fontawesome.com/c24a3b05a2.js"></script>
+        <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/book_styles.css">
+    </head>
+    <body>
+
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">SignUp</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+                  <div class="modal-body">
+                        <form name="registration" onsubmit="return validate();" method="post" action="SignUp.php">
+                            <table>
+                                <div class="form-row col-sm-12">
+                                    <tr>
+                                        <td><label for="UName">Username:</label></td>
+                                        <td><input id="UName" name="Uname" type="text" class="form-control ml-2 mb-2"></td>
+                                    </tr>
+                                    <tr><td></td><td id="userError" class="ml-2 mb-2" style="color: red; display: none">Enter username</td></tr>
+                                </div>
+                                <div class="form-row">
+                                    <tr>
+                                        <td><label for="pass">Password:</label></td>
+                                        <td><input id="pass" name="pass" type="password" class="form-control ml-2 mb-2"></td>
+                                    </tr>
+                                    <tr><td></td><td id="passError" class="ml-2 mb-2" style="color: red; display: none">Enter password of length 8 - 12 characters</td></tr>
+                                </div>
+                                <div class="form-row">
+                                    <tr>
+                                        <td><label for="repass">Re-enter Password:</label></td>
+                                        <td><input id="repass" name="repass" type="password" class="form-control ml-2 mb-2"></td>
+                                    </tr>
+                                    <tr><td></td><td id="repassError" class="ml-2 mb-2" style="color: red; display: none">Re-enter correct password</td></tr>
+                                </div>
+                                <div class="form-row">
+                                    <tr>
+                                        <td><label for="city">City:</label></td>
+                                        <td><input name="city" id="city" type="text" class="form-control ml-2 mb-2"></td>
+                                    </tr>
+                                    <tr><td></td><td id="cityError" class="ml-2 mb-2" style="color: red; display: none">Enter city</td></tr>
+                                </div>
+                            </table>
+                            <hr>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <input type="submit" value="Submit" class="btn btn-primary">
+                       </form>
+                  </div>
+    <!--
+                  <div class="modal-footer">
+                  </div>
+    -->
+
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="Javascript/script.js"></script>
+</html>
